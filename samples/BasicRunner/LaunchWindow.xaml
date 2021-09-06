@@ -8,8 +8,7 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         Title="Launcher" Height="250" Width="250"
-        modern:UIHooks.AutoDpiScale="True"
-        modern:UIHooks.DpiChange="Window_DpiChange">
+        DpiChanged="Window_DpiChanged">
     <Grid>
         <StackPanel>
             <TextBlock Text="All windows should be per-monitor DPI aware and scale accordingly."

@@ -9,8 +9,7 @@
         Title="Chrome With TitleBar"
         Width="460"
         Height="300"
-        modern:UIHooks.AutoDpiScale="True"
-        modern:UIHooks.DpiChange="Window_DpiChange"
+        DpiChanged="theWindow_DpiChanged"
         ResizeMode="CanResizeWithGrip"
         mc:Ignorable="d">
     <Window.Resources>

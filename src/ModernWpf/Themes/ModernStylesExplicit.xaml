@@ -637,7 +637,7 @@
         <Setter Property="FontSize" Value="{DynamicResource ContentFontSize}" />
         <Setter Property="Foreground" Value="{DynamicResource ModernForeground}" />
         <Setter Property="Background" Value="{DynamicResource ModernBackground}" />
-        <Setter Property="modern:UIHooks.AutoDpiScale" Value="True" />
+        <!--<Setter Property="modern:UIHooks.AutoDpiScale" Value="True" />-->
     </Style>
 
     <Style x:Key="ModernWindow"
@@ -1030,7 +1030,7 @@
         <Setter Property="FontSize" Value="{DynamicResource ToolTipContentThemeFontSize}" />
         <Setter Property="Padding" Value="10,6,10,7" />
         <Setter Property="HasDropShadow" Value="{DynamicResource {x:Static SystemParameters.DropShadowKey}}" />
-        <Setter Property="modern:UIHooks.AutoDpiScale" Value="True" />
+        <!--<Setter Property="modern:UIHooks.AutoDpiScale" Value="True" />-->
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ToolTip">
@@ -3291,7 +3291,7 @@
         <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
         <Setter Property="Grid.IsSharedSizeScope" Value="true" />
         <Setter Property="Padding" Value="0 4" />
-        <Setter Property="modern:UIHooks.AutoDpiScale" Value="True" />
+        <!--<Setter Property="modern:UIHooks.AutoDpiScale" Value="True" />-->
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ContextMenu">

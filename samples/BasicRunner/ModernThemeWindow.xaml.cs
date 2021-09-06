@@ -54,11 +54,6 @@ namespace BasicRunner
             });
         }
 
-        private void Window_DpiChange(object sender, ModernWpf.DpiChangeEventArgs e)
-        {
-            Debug.WriteLine("DPI changed to " + e.NewDpi);
-        }
-
         private void btnMsgBox_Click(object sender, RoutedEventArgs e)
         {
             var box = flyOuter.IsChecked.Value ? (ContentControl)this : innerFlyoutBox;
@@ -79,14 +74,14 @@ namespace BasicRunner
             Theme.ApplyTheme(Theme.CurrentTheme.GetValueOrDefault(), accent, this.Resources);
         }
 
-        protected override async void OnStateChanged(EventArgs e)
-        {
-            if (WindowState == WindowState.Minimized)
-            {
-                //await Task.Delay(1000);
-                //WindowCommands.RestoreCommand.Execute(this);
-            }
-        }
+        //protected override async void OnStateChanged(EventArgs e)
+        //{
+        //    if (WindowState == WindowState.Minimized)
+        //    {
+        //        await Task.Delay(1000);
+        //        WindowCommands.RestoreCommand.Execute(this);
+        //    }
+        //}
 
         private void btnUserFlyout_Click(object sender, RoutedEventArgs e)
         {
@@ -129,6 +124,11 @@ namespace BasicRunner
                 a++;
             }
             return (--a);
+        }
+
+        private void theWindow_DpiChanged(object sender, DpiChangedEventArgs e)
+        {
+            Debug.WriteLine("DPI changed to " + e.NewDpi);
         }
     }
 }

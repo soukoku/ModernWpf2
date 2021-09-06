@@ -15,11 +15,5 @@ namespace BasicRunner
     /// </summary>
     public partial class App : Application
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            UIHooks.EnableHighDpiSupport();
-            Debug.WriteLine("Per-monitor DPI Awareness=" + UIHooks.IsPerMonitorAware);
-            base.OnStartup(e);
-        }
     }
 }

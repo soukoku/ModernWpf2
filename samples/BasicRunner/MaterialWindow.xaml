@@ -11,9 +11,7 @@
         ResizeMode="CanResizeWithGrip" 
 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
-
-        modern:UIHooks.AutoDpiScale="True"
-        modern:UIHooks.DpiChange="Window_DpiChange">
+        DpiChanged="theWindow_DpiChanged">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

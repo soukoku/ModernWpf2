@@ -26,11 +26,6 @@ namespace BasicRunner
             InitializeComponent();
         }
 
-        private void Window_DpiChange(object sender, ModernWpf.DpiChangeEventArgs e)
-        {
-            Debug.WriteLine("DPI changed to " + e.NewDpi);
-        }
-
         private void btnRtl_Checked(object sender, RoutedEventArgs e)
         {
             this.FlowDirection = FlowDirection.RightToLeft;
@@ -39,6 +34,11 @@ namespace BasicRunner
         private void btnRtl_Unchecked(object sender, RoutedEventArgs e)
         {
             this.FlowDirection = FlowDirection.LeftToRight;
+        }
+
+        private void theWindow_DpiChanged(object sender, DpiChangedEventArgs e)
+        {
+            Debug.WriteLine("DPI changed to " + e.NewDpi);
         }
     }
 }

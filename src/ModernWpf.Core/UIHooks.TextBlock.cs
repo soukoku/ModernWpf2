@@ -76,7 +76,7 @@ namespace ModernWpf
                         // actual binding used by converter
                         bind.Bindings.Add(new Binding { Source = tb });
                         // hack to listen to dpi change
-                        bind.Bindings.Add(new Binding { Source = tb, Path = new PropertyPath(UIHooks.WindowDpiProperty) });
+                        //bind.Bindings.Add(new Binding { Source = tb, Path = new PropertyPath(UIHooks.WindowDpiProperty) });
                         // hack to listen to font size change
                         bind.Bindings.Add(new Binding(TextBlock.FontSizeProperty.Name) { Source = tb });
                         BindingOperations.SetBinding(tb, TextOptions.TextFormattingModeProperty, bind);

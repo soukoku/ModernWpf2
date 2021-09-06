@@ -19,7 +19,7 @@ namespace ModernWpf.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class CommandText {
@@ -57,6 +57,159 @@ namespace ModernWpf.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string CmdCancel {
+            get {
+                return ResourceManager.GetString("CmdCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        internal static string CmdClose {
+            get {
+                return ResourceManager.GetString("CmdClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string CmdCopy {
+            get {
+                return ResourceManager.GetString("CmdCopy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cut.
+        /// </summary>
+        internal static string CmdCut {
+            get {
+                return ResourceManager.GetString("CmdCut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string CmdDelete {
+            get {
+                return ResourceManager.GetString("CmdDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximize.
+        /// </summary>
+        internal static string CmdMaximize {
+            get {
+                return ResourceManager.GetString("CmdMaximize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimize.
+        /// </summary>
+        internal static string CmdMinimize {
+            get {
+                return ResourceManager.GetString("CmdMinimize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _No.
+        /// </summary>
+        internal static string CmdNo {
+            get {
+                return ResourceManager.GetString("CmdNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string CmdNo2 {
+            get {
+                return ResourceManager.GetString("CmdNo2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string CmdOK {
+            get {
+                return ResourceManager.GetString("CmdOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paste.
+        /// </summary>
+        internal static string CmdPaste {
+            get {
+                return ResourceManager.GetString("CmdPaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Redo.
+        /// </summary>
+        internal static string CmdRedo {
+            get {
+                return ResourceManager.GetString("CmdRedo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restore Down.
+        /// </summary>
+        internal static string CmdRestore {
+            get {
+                return ResourceManager.GetString("CmdRestore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select all.
+        /// </summary>
+        internal static string CmdSelectAll {
+            get {
+                return ResourceManager.GetString("CmdSelectAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Undo.
+        /// </summary>
+        internal static string CmdUndo {
+            get {
+                return ResourceManager.GetString("CmdUndo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Yes.
+        /// </summary>
+        internal static string CmdYes {
+            get {
+                return ResourceManager.GetString("CmdYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string CmdYes2 {
+            get {
+                return ResourceManager.GetString("CmdYes2", resourceCulture);
             }
         }
     }

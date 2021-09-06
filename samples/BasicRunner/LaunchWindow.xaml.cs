@@ -38,11 +38,6 @@ namespace BasicRunner
             new ChromeOnlyWindow { Owner = this }.Show();
         }
 
-        private void Window_DpiChange(object sender, ModernWpf.DpiChangeEventArgs e)
-        {
-            Debug.WriteLine("DPI changed to " + e.NewDpi);
-        }
-
         private void btnChromeTitle_Click(object sender, RoutedEventArgs e)
         {
             new ChromeWithTitleBarWindow { Owner = this }.Show();
@@ -56,6 +51,11 @@ namespace BasicRunner
         private void btnMetro_Click(object sender, RoutedEventArgs e)
         {
             new ModernThemeWindow { Owner = this }.Show();
+        }
+
+        private void Window_DpiChanged(object sender, DpiChangedEventArgs e)
+        {
+            Debug.WriteLine("DPI changed to " + e.NewDpi);
         }
     }
 }

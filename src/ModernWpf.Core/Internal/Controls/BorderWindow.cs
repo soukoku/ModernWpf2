@@ -204,6 +204,18 @@ namespace ModernWpf.Controls
 
         internal void UpdatePosnWpf(double left, double top, double width, double height)
         {
+            // since 4.6.2 we'll compensate border window's size if diff dpi than content window
+            var borderDpi = VisualTreeHelper.GetDpi(this);
+            var contentDpi = VisualTreeHelper.GetDpi(_manager.ContentWindow);
+            if (borderDpi.PixelsPerDip != contentDpi.PixelsPerDip)
+            {
+                var diff = borderDpi.PixelsPerDip / contentDpi.PixelsPerDip;
+                left /= diff;
+                top /= diff;
+                width /= diff;
+                height /= diff;
+            }
+
             var pad = (2 * PadSize);
             switch (Side)
             {
@@ -443,7 +455,8 @@ namespace ModernWpf.Controls
                 var pt = (Point)lParam.ToPoint();
                 pt = PointFromScreen(pt);
                 //Debug.WriteLine("NC pt = " + pt);
-                int diagSize = (int)(2 * PadSize * UIHooks.GetWindowDpiScale(_manager.ContentWindow));
+                var scale = VisualTreeHelper.GetDpi(_manager.ContentWindow);
+                int diagSize = (int)(2 * PadSize * scale.DpiScaleX);// UIHooks.GetWindowDpiScale(_manager.ContentWindow));
 
                 switch (Side)
                 {
